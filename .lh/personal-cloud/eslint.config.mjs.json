@@ -1,0 +1,22 @@
+{
+    "sourceFile": "personal-cloud/eslint.config.mjs",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1761687332671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761687358203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,16 @@\n-{\n-  \"extends\": [\"next/core-web-vitals\", \"eslint:recommended\"],\n-  \"parserOptions\": { \"ecmaVersion\": 2023 },\n-  \"rules\": {\n-    \"no-unused-vars\": [\"warn\", { \"argsIgnorePattern\": \"^_\", \"varsIgnorePattern\": \"^_\" }],\n-    \"@next/next/no-img-element\": \"off\"\n-  }\n-}\n+import { defineConfig, globalIgnores } from \"eslint/config\";\n+import nextVitals from \"eslint-config-next/core-web-vitals\";\n+import nextTs from \"eslint-config-next/typescript\";\n+\n+const eslintConfig = defineConfig([\n+  ...nextVitals,\n+  ...nextTs,\n+  globalIgnores([\n+    \".next/**\",\n+    \"out/**\",\n+    \"build/**\",\n+    \"next-env.d.ts\",\n+  ]),\n+]);\n+\n+export default eslintConfig;\n"
+                }
+            ],
+            "date": 1761687332671,
+            "name": "Commit-0",
+            "content": "{\n  \"extends\": [\"next/core-web-vitals\", \"eslint:recommended\"],\n  \"parserOptions\": { \"ecmaVersion\": 2023 },\n  \"rules\": {\n    \"no-unused-vars\": [\"warn\", { \"argsIgnorePattern\": \"^_\", \"varsIgnorePattern\": \"^_\" }],\n    \"@next/next/no-img-element\": \"off\"\n  }\n}\n"
+        }
+    ]
+}

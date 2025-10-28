@@ -1,0 +1,46 @@
+{
+    "sourceFile": "personal-cloud/app/(app)/layout.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1761688232512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761688238294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-cons\n\\ No newline at end of file\n+export default \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761688245321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-export default \n\\ No newline at end of file\n+export default function AppLay\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761688253802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+export default function AppLayout({ children })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761688259553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+export default function AppLayout({ children }: )\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761688267922,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+export default function AppLayout({ children }: { children: React})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761688276834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n import React from \"react\";\r\n \r\n-export default function AppLayout({ children }: { children: React})\n\\ No newline at end of file\n+export default function AppLayout({ children }: { children: React.React})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761688286112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+import React from \"react\";\r\n+\r\n+export default function AppLayout({ children }: { children: React.ReactNode}) {\r\n+    \r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1761688232512,
+            "name": "Commit-0",
+            "content": "cons"
+        }
+    ]
+}

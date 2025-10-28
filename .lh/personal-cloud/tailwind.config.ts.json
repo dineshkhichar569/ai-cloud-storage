@@ -1,0 +1,22 @@
+{
+    "sourceFile": "personal-cloud/tailwind.config.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1761687408523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761687440725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import type { Config } from \"tailwindcss\";\r\n \r\n const config: Config = {\r\n-  darkMode: [\"class\"],\r\n+  darkMode: [\"class\",\r\n   content: [\r\n     \"./src/app/**/*.{ts,tsx}\",\r\n     \"./src/components/**/*.{ts,tsx}\",\r\n     \"./src/lib/**/*.{ts,tsx}\"\r\n"
+                }
+            ],
+            "date": 1761687408523,
+            "name": "Commit-0",
+            "content": "import type { Config } from \"tailwindcss\";\r\n\r\nconst config: Config = {\r\n  darkMode: [\"class\"],\r\n  content: [\r\n    \"./src/app/**/*.{ts,tsx}\",\r\n    \"./src/components/**/*.{ts,tsx}\",\r\n    \"./src/lib/**/*.{ts,tsx}\"\r\n  ],\r\n  theme: {\r\n    extend: {}\r\n  },\r\n  plugins: []\r\n};\r\nexport default config;\r\n"
+        }
+    ]
+}

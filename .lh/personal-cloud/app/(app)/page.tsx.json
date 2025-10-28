@@ -1,0 +1,78 @@
+{
+    "sourceFile": "personal-cloud/app/(app)/page.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 15,
+            "patches": [
+                {
+                    "date": 1761689425321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761689439992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,11 @@\n-rfce\n\\ No newline at end of file\n+import React from 'react'\r\n+\r\n+function page() {\r\n+  return (\r\n+    <div>\r\n+      \r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default page\r\n"
+                },
+                {
+                    "date": 1761689450175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n \r\n-function page() {\r\n+export default function page() {\r\n   return (\r\n     <div>\r\n       \r\n     </div>\r\n"
+                },
+                {
+                    "date": 1761689456786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,9 @@\n import React from 'react'\r\n \r\n-export default function page() {\r\n+export default function AppHome() {\r\n   return (\r\n     <div>\r\n       \r\n     </div>\r\n   )\r\n-}\r\n-\r\n-export default page\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761689464217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n \r\n export default function AppHome() {\r\n   return (\r\n-    <div>\r\n+    <main>\r\n       \r\n-    </div>\r\n+    </main>\r\n   )\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761689471869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import React from 'react'\r\n+\r\n+export default function AppHome() {\r\n+  return (\r\n+    <main className='p-8'>\r\n+      <h2></h2>\r\n+    </main>\r\n+  )\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761689478517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import React from 'react'\r\n+\r\n+export default function AppHome() {\r\n+  return (\r\n+    <main className='p-8'>\r\n+      <h2>/app - </h2>\r\n+    </main>\r\n+  )\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761689486403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import React from 'react'\r\n+\r\n+export default function AppHome() {\r\n+  return (\r\n+    <main className='p-8'>\r\n+      <h2>/app - Protected area (</h2>\r\n+    </main>\r\n+  )\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761689495951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import React from 'react'\r\n+\r\n+export default function AppHome() {\r\n+  return (\r\n+    <main className='p-8'>\r\n+      <h2>/app - Protected area (comming soon)</h2>\r\n+    </main>\r\n+  )\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761689506823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import React from 'react'\r\n+\r\n+export default function AppHome() {\r\n+  return (\r\n+    <main className='p-8'>\r\n+      <h2>/app - Protected area (comming soon)</h2>\r\n+      <p>W'll</p>\r\n+    </main>\r\n+  )\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761689514331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import React from 'react'\r\n+\r\n+export default function AppHome() {\r\n+  return (\r\n+    <main className='p-8'>\r\n+      <h2>/app - Protected area (comming soon)</h2>\r\n+      <p>W'll lock this </p>\r\n+    </main>\r\n+  )\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761689521294,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import React from 'react'\r\n+\r\n+export default function AppHome() {\r\n+  return (\r\n+    <main className='p-8'>\r\n+      <h2>/app - Protected area (comming soon)</h2>\r\n+      <p>W'll lock this behind</p>\r\n+    </main>\r\n+  )\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761689528134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import React from 'react'\r\n+\r\n+export default function AppHome() {\r\n+  return (\r\n+    <main className='p-8'>\r\n+      <h2>/app - Protected area (comming soon)</h2>\r\n+      <p>W'll lock this behind NextAuth in Phase</p>\r\n+    </main>\r\n+  )\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761689535480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import React from 'react'\r\n+\r\n+export default function AppHome() {\r\n+  return (\r\n+    <main className='p-8'>\r\n+      <h2>/app - Protected area (comming soon)</h2>\r\n+      <p> calW'll lock this behind NextAuth in Phase 1.</p>\r\n+    </main>\r\n+  )\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761689541833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n export default function AppHome() {\r\n   return (\r\n     <main className='p-8'>\r\n       <h2>/app - Protected area (comming soon)</h2>\r\n-      <p className=''>W'll lock this behind NextAuth in Phase 1.</p>\r\n+      <p className='opac'>W'll lock this behind NextAuth in Phase 1.</p>\r\n     </main>\r\n   )\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761689547122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import React from 'react'\r\n+\r\n+export default function AppHome() {\r\n+  return (\r\n+    <main className='p-8'>\r\n+      <h2>/app - Protected area (comming soon)</h2>\r\n+      <p className='opacity-'>W'll lock this behind NextAuth in Phase 1.</p>\r\n+    </main>\r\n+  )\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1761689425321,
+            "name": "Commit-0",
+            "content": "rfce"
+        }
+    ]
+}
