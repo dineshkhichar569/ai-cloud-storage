@@ -1,0 +1,66 @@
+{
+    "sourceFile": "personal-cloud/src/env/client.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 12,
+            "patches": [
+                {
+                    "date": 1761693030508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761693036158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-loads + validates client-safe vars\n\\ No newline at end of file\n+//////////////////////    defines the Zod schema (rules)  ///////////////////////////\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695183117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,2 @@\n-//////////////////////    defines the Zod schema (rules)  ///////////////////////////\n\\ No newline at end of file\n+//////////////////////    loads + validates client-safe vars  ///////////////////////////\r\n+\r\n"
+                },
+                {
+                    "date": 1761695188737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,3 @@\n //////////////////////    loads + validates client-safe vars  ///////////////////////////\r\n \r\n+import \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695212643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n //////////////////////    loads + validates client-safe vars  ///////////////////////////\r\n \r\n-import \n\\ No newline at end of file\n+import { client}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695233368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,4 @@\n+//////////////////////    loads + validates client-safe vars  ///////////////////////////\r\n+\r\n+import { clientEnvSchema } from \"./schema\";\r\n+\r\n"
+                },
+                {
+                    "date": 1761695244040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n //////////////////////    loads + validates client-safe vars  ///////////////////////////\r\n \r\n import { clientEnvSchema } from \"./schema\";\r\n \r\n+const parsed\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695251716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+//////////////////////    loads + validates client-safe vars  ///////////////////////////\r\n+\r\n+import { clientEnvSchema } from \"./schema\";\r\n+\r\n+const parsed = clientEnvSchema.safeDecode\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695257583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+//////////////////////    loads + validates client-safe vars  ///////////////////////////\r\n+\r\n+import { clientEnvSchema } from \"./schema\";\r\n+\r\n+const parsed = clientEnvSchema.safeParse({\\})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695280871,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+//////////////////////    loads + validates client-safe vars  ///////////////////////////\r\n+\r\n+import { clientEnvSchema } from \"./schema\";\r\n+\r\n+const parsed = clientEnvSchema.safeParse({\r\n+    Next_public_app_url\r\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695290289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,7 @@\n+//////////////////////    loads + validates client-safe vars  ///////////////////////////\r\n+\r\n+import { clientEnvSchema } from \"./schema\";\r\n+\r\n+const parsed = clientEnvSchema.safeParse({\r\n+    NEXT_PUBLIC_APP_\r\n+})\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695296323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n import { clientEnvSchema } from \"./schema\";\r\n \r\n const parsed = clientEnvSchema.safeParse({\r\n-    NEXT_PUBLIC_APP_URL\r\n+    NEXT_PUBLIC_APP_URL:\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695305138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n \r\n import { clientEnvSchema } from \"./schema\";\r\n \r\n const parsed = clientEnvSchema.safeParse({\r\n-    NEXT_PUBLIC_APP_URL:\r\n+    NEXT_PUBLIC_APP_URL: ProcessingInstruction.ENV.next_\r\n })\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1761693030508,
+            "name": "Commit-0",
+            "content": "loads + validates client-safe vars"
+        }
+    ]
+}

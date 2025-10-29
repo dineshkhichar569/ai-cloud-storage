@@ -1,3 +1,5 @@
+import "./src/env/server";
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -7,9 +9,7 @@ const nextConfig: NextConfig = {
     typedRoutes: true,
   },
   images: {
-    remotePatterns: [
-      { protocol: "https", hostname: "**" },
-    ],
+    remotePatterns: [{ protocol: "https", hostname: "**" }],
   },
 };
 

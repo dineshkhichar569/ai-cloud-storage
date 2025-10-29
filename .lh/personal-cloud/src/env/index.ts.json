@@ -1,0 +1,38 @@
+{
+    "sourceFile": "personal-cloud/src/env/index.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1761693052422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761693063441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-//////////////////////    defines the Zod schema (rules)  ///////////////////////////\n\\ No newline at end of file\n+//////////////////////    merges both and exports clean env object   ///////////////////////////\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695485289,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,4 @@\n-//////////////////////    merges both and exports clean env object   ///////////////////////////\n\\ No newline at end of file\n+//////////////////////    merges both and exports clean env object   ///////////////////////////\r\n+\r\n+\r\n+export {}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695490955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,4 @@\n+//////////////////////    merges both and exports clean env object   ///////////////////////////\r\n+\r\n+\r\n+export {serverEnv }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695498735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n //////////////////////    merges both and exports clean env object   ///////////////////////////\r\n \r\n \r\n-export {serverEnv } from\n\\ No newline at end of file\n+export {serverEnv } from './server'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761695531773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+//////////////////////    merges both and exports clean env object   ///////////////////////////\r\n+\r\n+\r\n+export { serverEnv } from './server';\r\n+export { serverEnv } from './server';\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1761693052422,
+            "name": "Commit-0",
+            "content": "//////////////////////    defines the Zod schema (rules)  ///////////////////////////"
+        }
+    ]
+}

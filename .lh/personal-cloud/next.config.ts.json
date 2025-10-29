@@ -3,11 +3,23 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1761687298912,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761695589759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\n import type { NextConfig } from \"next\";\n \n const nextConfig: NextConfig = {\n   reactStrictMode: true,\n"
+                },
+                {
+                    "date": 1761695596888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import './'\n+\n+import type { NextConfig } from \"next\";\n+\n+const nextConfig: NextConfig = {\n+  reactStrictMode: true,\n+  poweredByHeader: false,\n+  experimental: {\n+    typedRoutes: true,\n+  },\n+  images: {\n+    remotePatterns: [\n+      { protocol: \"https\", hostname: \"**\" },\n+    ],\n+  },\n+};\n+\n+export default nextConfig;\n"
+                },
+                {
+                    "date": 1761695604336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import './src/env/server'\n+\n+import type { NextConfig } from \"next\";\n+\n+const nextConfig: NextConfig = {\n+  reactStrictMode: true,\n+  poweredByHeader: false,\n+  experimental: {\n+    typedRoutes: true,\n+  },\n+  images: {\n+    remotePatterns: [\n+      { protocol: \"https\", hostname: \"**\" },\n+    ],\n+  },\n+};\n+\n+export default nextConfig;\n"
                 }
             ],
             "date": 1761687298912,

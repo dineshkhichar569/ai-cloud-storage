@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1761685836021,
@@ -12,6 +12,10 @@
                 {
                     "date": 1761691249930,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,22 +5,33 @@\n   \"scripts\": {\n     \"dev\": \"next dev\",\n     \"build\": \"next build\",\n     \"start\": \"next start\",\n-    \"lint\": \"eslint\"\n+    \"lint\": \"eslint\",\n+        \"format\": \"prettier --write .\",\n+    \"typecheck\": \"tsc --noEmit\"\n   },\n   \"dependencies\": {\n+    \"@radix-ui/react-slot\": \"^1.2.3\",\n+    \"class-variance-authority\": \"^0.7.1\",\n+    \"clsx\": \"^2.1.1\",\n+    \"lucide-react\": \"^0.548.0\",\n+    \"next\": \"16.0.1\",\n+    \"postcss\": \"^8.5.6\",\n     \"react\": \"19.2.0\",\n     \"react-dom\": \"19.2.0\",\n-    \"next\": \"16.0.1\"\n+    \"tailwind-merge\": \"^3.3.1\"\n   },\n   \"devDependencies\": {\n-    \"typescript\": \"^5\",\n+    \"@tailwindcss/postcss\": \"^4.1.16\",\n     \"@types/node\": \"^20\",\n     \"@types/react\": \"^19\",\n     \"@types/react-dom\": \"^19\",\n-    \"@tailwindcss/postcss\": \"^4\",\n-    \"tailwindcss\": \"^4\",\n     \"eslint\": \"^9\",\n-    \"eslint-config-next\": \"16.0.1\"\n+    \"eslint-config-next\": \"16.0.1\",\n+    \"prettier\": \"^3.6.2\",\n+    \"prettier-plugin-tailwindcss\": \"^0.7.1\",\n+    \"tailwindcss\": \"^4.1.16\",\n+    \"tw-animate-css\": \"^1.4.0\",\n+    \"typescript\": \"^5\"\n   }\n }\n"
+                },
+                {
+                    "date": 1761695681919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,11 @@\n     \"dev\": \"next dev\",\n     \"build\": \"next build\",\n     \"start\": \"next start\",\n     \"lint\": \"eslint\",\n-        \"format\": \"prettier --write .\",\n-    \"typecheck\": \"tsc --noEmit\"\n+    \"format\": \"prettier --write .\",\n+    \"typecheck\": \"tsc --noEmit\",\n+    \"check\": \"npm run typecheck && npm run lint\"\n   },\n   \"dependencies\": {\n     \"@radix-ui/react-slot\": \"^1.2.3\",\n     \"class-variance-authority\": \"^0.7.1\",\n@@ -18,9 +19,10 @@\n     \"next\": \"16.0.1\",\n     \"postcss\": \"^8.5.6\",\n     \"react\": \"19.2.0\",\n     \"react-dom\": \"19.2.0\",\n-    \"tailwind-merge\": \"^3.3.1\"\n+    \"tailwind-merge\": \"^3.3.1\",\n+    \"zod\": \"^4.1.12\"\n   },\n   \"devDependencies\": {\n     \"@tailwindcss/postcss\": \"^4.1.16\",\n     \"@types/node\": \"^20\",\n"
                 }
             ],
             "date": 1761685836021,

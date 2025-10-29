@@ -1,0 +1,34 @@
+{
+    "sourceFile": "personal-cloud/src/env/schema.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1761692969575,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1761692977072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+///////////////////////    defines the Zod schema (rules)  ///////////////////////////\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761692983107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+///////////////////////    defines the Zod schema (rules)  ///////////////////////////\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761692996066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-/@/////////////////////    defines the Zod schema (rules)  ///////////////////////////\n\\ No newline at end of file\n+//////////////////////    defines the Zod schema (rules)  ///////////////////////////\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1761693486163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,8 @@\n });\r\n \r\n /* Only for server, not visible to browser */\r\n export const serverEnvSchema = z.object({\r\n+    NODE_ENV:z.enum(['dvelopment', 'test', 'production']).default('dvelopment'),\r\n \r\n-    NODE_ENV:z.enum(['dvelopment', 'test', 'production']).default('dvelopment'),\r\n })\r\n \r\n"
+                }
+            ],
+            "date": 1761692969575,
+            "name": "Commit-0",
+            "content": "// "
+        }
+    ]
+}
