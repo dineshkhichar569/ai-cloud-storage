@@ -1,0 +1,94 @@
+{
+    "sourceFile": "personal-cloud/src/app/app/page.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 19,
+            "patches": [
+                {
+                    "date": 1762035886661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1762035892574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n \r\n \r\n \r\n-export default\n\\ No newline at end of file\n+export default async function \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762035898243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,6 @@\n+\r\n+\r\n+\r\n+export default async function AppHome(){\r\n+    \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762035916121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n \r\n \r\n \r\n export default async function AppHome(){\r\n-    \r\n+    const session\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762035922358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,6 @@\n+\r\n+\r\n+\r\n+export default async function AppHome(){\r\n+    const session await get\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762035928868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,6 @@\n+\r\n+\r\n+\r\n+export default async function AppHome(){\r\n+    const session = await getServer\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762035934149,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n+import { getServerSession } from \"next-auth\";\r\n \r\n \r\n \r\n export default async function AppHome(){\r\n-    const session = await getServer\r\n+    const session = await getServerSession\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762035940647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import { authOptions } from \"@/src/lib/auth\";\r\n+import { getServerSession } from \"next-auth\";\r\n+\r\n+\r\n+\r\n+export default async function AppHome(){\r\n+    const session = await getServerSession(authOptions);\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762035949378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import { authOptions } from \"@/src/lib/auth\";\r\n+import { getServerSession } from \"next-auth\";\r\n+\r\n+\r\n+\r\n+export default async function AppHome(){\r\n+    const session = await getServerSession(authOptions);\r\n+    \r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762035959850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import { authOptions } from \"@/src/lib/auth\";\r\n+import { getServerSession } from \"next-auth\";\r\n+\r\n+\r\n+\r\n+export default async function AppHome(){\r\n+    const session = await getServerSession(authOptions);\r\n+\r\n+    if(!session)\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762035966747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import { authOptions } from \"@/src/lib/auth\";\r\n+import { getServerSession } from \"next-auth\";\r\n+\r\n+\r\n+\r\n+export default async function AppHome(){\r\n+    const session = await getServerSession(authOptions);\r\n+\r\n+    if(!session?.user) {\r\n+        \r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762035975220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,57 +6,7 @@\n export default async function AppHome(){\r\n     const session = await getServerSession(authOptions);\r\n \r\n     if(!session?.user) {\r\n-        \r\n+        return\r\n     }\r\n-}\n-import { authOptions } from \"@/src/lib/auth\";\r\n-import { getServerSession } from \"next-auth\";\r\n-\r\n-\r\n-\r\n-export default async function AppHome(){\r\n-    const session = await getServerSession(authOptions);\r\n-\r\n-    if(!session)\r\n-}\n-import { authOptions } from \"@/src/lib/auth\";\r\n-import { getServerSession } from \"next-auth\";\r\n-\r\n-\r\n-\r\n-export default async function AppHome(){\r\n-    const session = await getServerSession(authOptions);\r\n-    \r\n-}\n-import { authOptions } from \"@/src/lib/auth\";\r\n-import { getServerSession } from \"next-auth\";\r\n-\r\n-\r\n-\r\n-export default async function AppHome(){\r\n-    const session = await getServerSession(authOptions);\r\n-}\n-import { getServerSession } from \"next-auth\";\r\n-\r\n-\r\n-\r\n-export default async function AppHome(){\r\n-    const session = await getServerSession\r\n-}\n-\r\n-\r\n-\r\n-export default async function AppHome(){\r\n-    const session await get\r\n-}\n-\r\n-\r\n-\r\n-export default async function AppHome(){\r\n-    const session\r\n-}\n-\r\n-\r\n-\r\n\\ No newline at end of file\n-export default async function \n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762035987233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import { authOptions } from \"@/src/lib/auth\";\r\n+import { getServerSession } from \"next-auth\";\r\n+\r\n+\r\n+\r\n+export default async function AppHome(){\r\n+    const session = await getServerSession(authOptions);\r\n+\r\n+    if(!session?.user) {\r\n+        return(\r\n+            <main className=\"mx-auto\"></main>\r\n+        )\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762035998909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import { authOptions } from \"@/src/lib/auth\";\r\n+import { getServerSession } from \"next-auth\";\r\n+\r\n+\r\n+\r\n+export default async function AppHome(){\r\n+    const session = await getServerSession(authOptions);\r\n+\r\n+    if(!session?.user) {\r\n+        return(\r\n+            <main className=\"mx-auto max-w-xl p-10 text-center\"></main>\r\n+        )\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762036005570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import { authOptions } from \"@/src/lib/auth\";\r\n+import { getServerSession } from \"next-auth\";\r\n+\r\n+\r\n+\r\n+export default async function AppHome(){\r\n+    const session = await getServerSession(authOptions);\r\n+\r\n+    if(!session?.user) {\r\n+        return(\r\n+            <main className=\"mx-auto max-w-xl p-10 text-center\">\r\n+                <h1 className=\"\"></h1>\r\n+            </main>\r\n+        )\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762036012116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import { authOptions } from \"@/src/lib/auth\";\r\n+import { getServerSession } from \"next-auth\";\r\n+\r\n+\r\n+\r\n+export default async function AppHome(){\r\n+    const session = await getServerSession(authOptions);\r\n+\r\n+    if(!session?.user) {\r\n+        return(\r\n+            <main className=\"mx-auto max-w-xl p-10 text-center\">\r\n+                <h1 className=\"text-xl font\"></h1>\r\n+            </main>\r\n+        )\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762036028304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,65 +8,9 @@\n \r\n     if(!session?.user) {\r\n         return(\r\n             <main className=\"mx-auto max-w-xl p-10 text-center\">\r\n-                <h1 className=\"text-xl font\"></h1>\r\n+                <h1 className=\"text-xl font-semibold\">Not authenticated</h1>\r\n             </main>\r\n         )\r\n     }\r\n-}\n-import { authOptions } from \"@/src/lib/auth\";\r\n-import { getServerSession } from \"next-auth\";\r\n-\r\n-\r\n-\r\n-export default async function AppHome(){\r\n-    const session = await getServerSession(authOptions);\r\n-\r\n-    if(!session?.user) {\r\n-        return(\r\n-            <main className=\"mx-auto max-w-xl p-10 text-center\">\r\n-                <h1 className=\"\"></h1>\r\n-            </main>\r\n-        )\r\n-    }\r\n-}\n-import { authOptions } from \"@/src/lib/auth\";\r\n-import { getServerSession } from \"next-auth\";\r\n-\r\n-\r\n-\r\n-export default async function AppHome(){\r\n-    const session = await getServerSession(authOptions);\r\n-\r\n-    if(!session?.user) {\r\n-        return(\r\n-            <main className=\"mx-auto max-w-xl p-10 text-center\"></main>\r\n-        )\r\n-    }\r\n-}\n-import { authOptions } from \"@/src/lib/auth\";\r\n-import { getServerSession } from \"next-auth\";\r\n-\r\n-\r\n-\r\n-export default async function AppHome(){\r\n-    const session = await getServerSession(authOptions);\r\n-\r\n-    if(!session?.user) {\r\n-        return(\r\n-            <main className=\"mx-auto\"></main>\r\n-        )\r\n-    }\r\n-}\n-import { authOptions } from \"@/src/lib/auth\";\r\n-import { getServerSession } from \"next-auth\";\r\n-\r\n-\r\n-\r\n-export default async function AppHome(){\r\n-    const session = await getServerSession(authOptions);\r\n-\r\n-    if(!session?.user) {\r\n-        return\r\n-    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762036037749,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+import { authOptions } from \"@/src/lib/auth\";\r\n+import { getServerSession } from \"next-auth\";\r\n+\r\n+\r\n+\r\n+export default async function AppHome(){\r\n+    const session = await getServerSession(authOptions);\r\n+\r\n+    if(!session?.user) {\r\n+        return(\r\n+            <main className=\"mx-auto max-w-xl p-10 text-center\">\r\n+                <h1 className=\"text-xl font-semibold\">Not authenticated</h1>\r\n+                        <p className=\"mt-2 text-muted-foreground\">You’ll be redirected to sign in.</p>\r\n+        \r\n+            </main>\r\n+        )\r\n+    }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762036044182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     return (\r\n       <main className=\"mx-auto max-w-xl p-10 text-center\">\r\n         <h1 className=\"text-xl font-semibold\">Not authenticated</h1>\r\n         <p className=\"text-muted-foreground mt-2\">You’ll be redirected to sign in.</p>\r\n-        \r\n+        Bu\r\n       </main>\r\n     );\r\n   }\r\n }\r\n"
+                },
+                {
+                    "date": 1762036050332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         <h1 className=\"text-xl font-semibold\">Not authenticated</h1>\r\n         <p className=\"text-muted-foreground mt-2\">You’ll be redirected to sign in.</p>\r\n         \r\n         <Button></Button>\r\n+      \r\n       </main>\r\n     );\r\n   }\r\n }\r\n"
+                }
+            ],
+            "date": 1762035886661,
+            "name": "Commit-0",
+            "content": "\r\n\r\n\r\nexport default"
+        }
+    ]
+}

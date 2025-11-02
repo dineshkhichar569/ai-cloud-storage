@@ -1,0 +1,38 @@
+{
+    "sourceFile": "personal-cloud/src/lib/mongoose.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1762038156165,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1762038164011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,1 @@\n+import mongoose\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762038169057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,1 @@\n-import mongoose\n-import m\n\\ No newline at end of file\n+import mongoose from 'mongoose'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762038174152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,3 @@\n+import mongoose from 'mongoose';\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1762038180415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n import mongoose from 'mongoose';\r\n \r\n \r\n-declare glo\n\\ No newline at end of file\n+declare global\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762038187020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import mongoose from 'mongoose';\r\n \r\n \r\n declare global {\r\n-    \r\n+    var _\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1762038156165,
+            "name": "Commit-0",
+            "content": "import m"
+        }
+    ]
+}

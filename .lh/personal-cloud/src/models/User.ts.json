@@ -1,0 +1,42 @@
+{
+    "sourceFile": "personal-cloud/src/models/User.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1762038462745,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1762038470222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,5 @@\n+import { Schema } from \"mongoose\";\r\n+\r\n+\r\n+\r\n+const UserSchema = new Schema\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762038482317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,9 @@\n import { Schema } from \"mongoose\";\r\n \r\n \r\n \r\n-const UserSchema = new Schema\n\\ No newline at end of file\n+const UserSchema = new Schema (\r\n+    {\r\n+        EMAIL\r\n+    }\r\n+)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762038488697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import { Schema } from \"mongoose\";\r\n+\r\n+\r\n+\r\n+const UserSchema = new Schema (\r\n+    {\r\n+        email\r\n+    }\r\n+)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762038496610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,9 @@\n \r\n \r\n const UserSchema = new Schema (\r\n     {\r\n-        email\r\n+        email: {\r\n+            t\r\n+        }\r\n     }\r\n )\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762038502503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n \r\n const UserSchema = new Schema (\r\n     {\r\n         email: {\r\n-            type\r\n+            type: String\r\n         }\r\n     }\r\n )\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1762038508509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import { Schema } from \"mongoose\";\r\n+import { email } from \"zod\";\r\n+\r\n+\r\n+\r\n+const UserSchema = new Schema (\r\n+    {\r\n+        email: {\r\n+            type: String, req\r\n+        }\r\n+    }\r\n+)\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1762038462745,
+            "name": "Commit-0",
+            "content": "\r\n\r\n\r\nconst UserSche"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+import { withAuth } from "next-auth/middleware";
+
+export default withAuth({
+  pages: {
+    signIn: "/signin",
+  },
+});
+
+//////////////// to protect everything under /app
+export const config = {
+  matcher: ["/app/:path*"],
+};

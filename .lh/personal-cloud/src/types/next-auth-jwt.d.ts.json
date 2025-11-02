@@ -1,0 +1,22 @@
+{
+    "sourceFile": "personal-cloud/src/types/next-auth-jwt.d.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1762041314989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1762041325270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n-import 'next-auth/jwt';\r\n+import \"next-auth/jwt\";\r\n \r\n-declare module 'next-auth/jwt' {\r\n+declare module \"next-auth/jwt\" {\r\n   interface JWT {\r\n-    role?: 'user' | 'admin';\r\n+    role?: \"user\" | \"admin\";\r\n\\ No newline at end of file\n     hasOnboarded?: boolean;\r\n   }\r\n-}\n+}\r\n"
+                }
+            ],
+            "date": 1762041314989,
+            "name": "Commit-0",
+            "content": "import 'next-auth/jwt';\r\n\r\ndeclare module 'next-auth/jwt' {\r\n  interface JWT {\r\n    role?: 'user' | 'admin';\r\n    hasOnboarded?: boolean;\r\n  }\r\n}\r\n"
+        }
+    ]
+}
